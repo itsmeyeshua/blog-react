@@ -48,9 +48,9 @@ const CreatePage = () => {
                 <textarea type="text" required value={body} onChange={(e) => setBody(e.target.value)}/>
                 <label>Author:</label>
                 <select value={author} onChange={(e) => setAuthor(e.target.value)}>
-                    {
-                        authorsArr && authorsArr.map(author => <option key={author} value={author}>{author}</option>)
-                    }
+                {
+                    authorsArr && authorsArr.map(author => <option key={author} value={author}>{author}</option>)
+                }
                 </select>
 
                 { !isPending && <button>Add Blog</button>}
